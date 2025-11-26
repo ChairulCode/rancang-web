@@ -24,30 +24,35 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Navbar />
       <Hero />
-      <SectionTitle title=" Mengapa membuat website dengan kami?">
-        <span className="text-indigo-600">RancangWeb</span> adalah agensi
-        pembuatan website terbaik di medan, dengan pelayanan yang professional.
-        Kami menyediakan jasa pembuatan website dengan budget minimal dan hasil
-        maksimal.
-      </SectionTitle>
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
-      <Portfolio />
-      <SectionTitle pretitle="Testimoni" title="Cerita Sukses Bersama Klien">
-        Setiap proyek yang kami bangun ditujukan untuk membantu bisnis
-        berkembang lebih cepat. Berikut pengalaman langsung dari mereka yang
-        telah meraih dampak positif melalui website yang kami kembangkan.
-      </SectionTitle>
-
-      <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-      <Faq />
+      {/* section tentang kami */}
+      <div id="tentang-kami">
+        <SectionTitle
+          title=" Mengapa membuat website dengan kami?"
+          id="tentang-kami"
+        >
+          <span className="text-indigo-600">RancangWeb</span> adalah agensi
+          pembuatan website terbaik di medan, dengan pelayanan yang
+          professional. Kami menyediakan jasa pembuatan website dengan budget
+          minimal dan hasil maksimal.
+        </SectionTitle>
+        <Benefits data={benefitOne} />
+      </div>
+      <div id="solusi">
+        <Benefits imgPos="right" data={benefitTwo} />
+      </div>
+      <div id="portofolio">
+        <Portfolio />
+      </div>
+      <div id="testimoni">
+        <SectionTitle pretitle="Testimoni" title="Cerita Sukses Bersama Klien">
+          Setiap proyek yang kami bangun ditujukan untuk membantu bisnis
+          berkembang lebih cepat. Berikut pengalaman langsung dari mereka yang
+          telah meraih dampak positif melalui website yang kami kembangkan.
+        </SectionTitle>
+        <Testimonials />
+      </div>
       <Cta />
       <Footer />
       <PopupWidget />
