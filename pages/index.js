@@ -13,7 +13,16 @@ import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 
-export default function Home() {
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Home component
+ *
+ * This component renders the home page of the website.
+ * It includes the hero section, the about section, the solution section, the portfolio section, the testimonials section, the call to action section, and the footer section.
+ *
+ * @returns {JSX.Element} The rendered component.
+ */
+/*******  0949e077-90cb-4ac9-91c5-074cacec782b  *******/ export default function Home() {
   return (
     <>
       <Head>
