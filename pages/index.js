@@ -16,10 +16,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>rancang web - agensi pembuatan website terbaik di medan</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="rancang web - agensi pembuatan website terbaik di medan, dengan pelayanan yang profesional. Kami menyediakan jasa pembuatan website dengan budget minimal dan hasil maksimal."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

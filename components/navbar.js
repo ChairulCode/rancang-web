@@ -80,13 +80,13 @@ export default function Navbar() {
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="#!" legacyBehavior>
                   <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                    <span>
+                    <span className="relative inline-block -my-2">
                       <img
-                        src="/favicon.ico"
-                        alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
+                        src="/logo.png"
+                        alt="RancangWeb"
+                        width="48"
+                        height="48"
+                        className="w-12 h-12 transition-all dark:invert dark:brightness-0 dark:contrast-200"
                       />
                     </span>
                     <span>RancangWeb</span>
