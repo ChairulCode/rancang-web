@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 max-w-screen-xl">
           <div className="lg:max-w-md">
             <div>
-              <Link href="#!">
+              <Link href="#!" legacyBehavior>
                 <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                   <span>
                     <img

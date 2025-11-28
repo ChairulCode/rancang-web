@@ -78,7 +78,7 @@ export default function Navbar() {
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="#!">
+                <Link href="#!" legacyBehavior>
                   <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       <img
@@ -134,7 +134,7 @@ export default function Navbar() {
                         {item.name}
                       </a>
                     ))}
-                    <Link href="#!">
+                    <Link href="#!" legacyBehavior>
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
                         kontak kami!
                       </a>
@@ -168,7 +168,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-3 lg:flex nav__item">
-          <Link href="#!">
+          <Link href="#!" legacyBehavior>
             <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5 hover:bg-indigo-700 transition-colors">
               Kontak Kami!
             </a>
