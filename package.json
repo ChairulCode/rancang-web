@@ -5,7 +5,7 @@
   "homepage": "https://themewagon.github.io/nextly",
   "private": true,
   "engines": {
-    "node": "24.x"
+    "node": "24"
   },
   "scripts": {
     "dev": "next dev",
