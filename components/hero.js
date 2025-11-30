@@ -2,83 +2,23 @@ import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
 
-export default function Hero() {
+// SEMUA FUNCTION SVG DI TARUH DI ATAS DULU BRODER
+function TrendingUpGraph() {
   return (
-    <>
-      <Container className="flex flex-wrap ">
-        <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Naikkan level bisnis Anda!.{" "}
-              <span className="text-indigo-600">
-                Website Profesional Mulai dari 500 Ribu
-              </span>
-            </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Tingkatkan kualitas dan daya tarik bisnis Anda melalui website
-              modern dan responsif yang menghadirkan kesan profesional,
-              membangun kepercayaan, dan membuka lebih banyak peluang
-              pertumbuhan penjualan
-            </p>
-
-            <div className="flex flex-col items-start space-x-3 space-y-3 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href="https://github.com/themewagon/nextly"
-                target="_blank"
-                rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
-              >
-                Buat Website Sekarang
-              </a>
-              <a
-                href="#!"
-                rel="noopener"
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400"
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="hidden lg:block">
-            <Image
-              src={heroImg}
-              width="616"
-              height="617"
-              alt="Hero Illustration"
-              layout="intrinsic"
-              loading="eager"
-              placeholder="blur"
-            />
-          </div>
-        </div>
-      </Container>
-      <Container>
-        <div className="flex flex-col justify-center">
-          <div className="text-xl text-center text-gray-700 dark:text-white">
-            Menggunakan Teknologi Modern untuk Performa yang{" "}
-            <span className="text-indigo-600"> Cepat dan Optimal</span>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <ReactLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <NextJsLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <TailwindLogo />
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <TypeScriptLogo />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <NodeJsLogo />
-            </div>
-          </div>
-        </div>
-      </Container>
-    </>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="120"
+      height="40"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+      <polyline points="17 6 23 6 23 12" />
+    </svg>
   );
 }
 
@@ -195,5 +135,95 @@ function NodeJsLogo() {
         d="M128 288.464c-3.975 0-7.685-1.06-11.13-2.915l-35.247-20.936c-5.3-2.915-2.65-3.975-1.06-4.505 7.155-2.385 8.48-2.915 15.9-7.156.796-.53 1.856-.265 2.65.265l27.032 16.166c1.06.53 2.385.53 3.18 0l105.74-61.217c1.06-.53 1.59-1.59 1.59-2.915V83.08c0-1.325-.53-2.385-1.59-2.915l-105.74-60.953c-1.06-.53-2.385-.53-3.18 0L20.405 80.166c-1.06.53-1.59 1.855-1.59 2.915v122.17c0 1.06.53 2.385 1.59 2.915l28.887 16.696c15.636 7.952 25.44-1.325 25.44-10.6V93.68c0-1.59 1.326-3.18 3.181-3.18h13.516c1.59 0 3.18 1.325 3.18 3.18v120.58c0 20.936-11.396 33.126-31.272 33.126-6.095 0-10.865 0-24.38-6.625l-27.827-15.9C4.24 220.885 0 213.465 0 205.513V83.346C0 75.394 4.24 67.974 11.13 64L116.87 2.783c6.625-3.71 15.635-3.71 22.26 0L244.87 64C251.76 67.974 256 75.394 256 83.346v122.167c0 7.952-4.24 15.372-11.13 19.346L139.13 286.08c-3.445 1.59-7.42 2.385-11.13 2.385zm32.596-84.009c-46.377 0-55.917-21.2-55.917-39.221 0-1.59 1.325-3.18 3.18-3.18h13.78c1.59 0 2.916 1.06 2.916 2.65 2.12 14.045 8.215 20.936 36.306 20.936 22.261 0 31.802-5.035 31.802-16.96 0-6.891-2.65-11.926-37.367-15.372-28.886-2.915-46.907-9.275-46.907-32.33 0-21.467 18.022-34.186 48.232-34.186 33.921 0 50.617 11.66 52.737 37.101 0 .795-.265 1.59-.795 2.385-.53.53-1.325 1.06-2.12 1.06h-13.78c-1.326 0-2.65-1.06-2.916-2.385-3.18-14.575-11.395-19.346-33.126-19.346-24.38 0-27.296 8.48-27.296 14.84 0 7.686 3.445 10.07 36.306 14.31 32.597 4.24 47.967 10.336 47.967 33.127-.265 23.321-19.611 36.571-53.796 36.571z"
       />
     </svg>
+  );
+}
+
+// BARU function Hero di sini broder
+export default function Hero() {
+  // WhatsApp Configuration
+  const whatsappNumber = "6285119398542";
+  const whatsappMessage =
+    "Halo RancangWeb! Saya tertarik untuk membuat website. Bisa diskusi lebih lanjut?";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
+  return (
+    <>
+      <Container className="flex flex-wrap ">
+        <div className="flex items-center w-full lg:w-1/2">
+          <div className="max-w-2xl mb-8">
+            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+              Naikkan level bisnis Anda!.{" "}
+              <span className="text-indigo-600">
+                Website Profesional Mulai dari 500 Ribu
+              </span>
+            </h1>
+            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+              Tingkatkan kualitas dan daya tarik bisnis Anda melalui website
+              modern dan responsif yang menghadirkan kesan profesional,
+              membangun kepercayaan, dan membuka lebih banyak peluang
+              pertumbuhan penjualan
+            </p>
+
+            <div className="flex flex-col items-start space-x-3 space-y-3 sm:space-y-0 sm:items-center sm:flex-row">
+              {/* WhatsApp CTA Button - No Icon */}
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md hover:bg-indigo-700 transition-colors"
+              >
+                Buat Website Sekarang
+              </a>
+              <a
+                href="#!"
+                rel="noopener"
+                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center justify-center w-full lg:w-1/2">
+          <div className="hidden lg:block">
+            <Image
+              src={heroImg}
+              width="616"
+              height="617"
+              alt="Hero Illustration"
+              layout="intrinsic"
+              loading="eager"
+              placeholder="blur"
+            />
+          </div>
+        </div>
+      </Container>
+      <Container>
+        <div className="flex flex-col justify-center">
+          <div className="text-xl text-center text-gray-700 dark:text-white">
+            Menggunakan Teknologi Modern untuk Performa yang{" "}
+            <span className="text-indigo-600"> Cepat dan Optimal</span>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
+            <div className="pt-2 text-gray-400 dark:text-gray-400">
+              <TrendingUpGraph />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <NextJsLogo />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <TailwindLogo />
+            </div>
+            <div className="pt-1 text-gray-400 dark:text-gray-400">
+              <TypeScriptLogo />
+            </div>
+            <div className="pt-2 text-gray-400 dark:text-gray-400">
+              <NodeJsLogo />
+            </div>
+          </div>
+        </div>
+      </Container>
+    </>
   );
 }

@@ -6,25 +6,25 @@ const testimonials = [
     message:
       "Kami sangat puas dengan hasil website dari tim kamu. Layoutnya bersih, informatif, dan profesional—tepat untuk menunjukkan portofolio proyek konstruksi kami. Timmu cepat tanggap, paham kebutuhan industri, dan berhasil membuat halaman yang membuat klien baru langsung percaya.",
     highlight: "bersih, informatif, dan profesional",
-    image: "/img/user1.jpg",
-    name: "Cust 1",
+    image: "https://i.pravatar.cc/150?img=12",
+    name: "customer - 1",
     title: "founder of radian aspal beton medan",
   },
   {
     message:
       "Desain web yang dibuat benar-benar bikin pelanggan betah. Warna, foto menu, dan alur pemesanan tampak rapi—membuat kopi kami terasa lebih spesial sebelum orang sampai ke kedai. Sejak live, traffic naik dan pesan lewat website jadi lebih sering.",
     highlight: "terasa lebih spesial",
-    image: "/img/user2.jpg",
-    name: "Cust 2",
+    image: "https://i.pravatar.cc/150?img=5",
+    name: "customer - 2",
     title: "founder of kinisocial club",
   },
   {
     message:
       "Website baru dari tim kamu bikin clubhouse kami terlihat modern dan mudah diakses. Jadwal meja, harga sewa, dan promo event tampil jelas; pelanggan bisa booking tanpa ribet. Sejak diluncurkan, lebih banyak komunitas datang dan sering cek update.",
     highlight: "modern dan mudah diakses",
-    image: "/img/user3.jpg",
-    name: "Gabrielle Winn",
-    title: "Co-founder of Acme Inc",
+    image: "https://i.pravatar.cc/150?img=33",
+    name: "customer - 3",
+    title: "founder of eighpool billiard medan",
   },
 ];
 
@@ -52,8 +52,14 @@ export default function Testimonials() {
 function Avatar({ image, name, title }) {
   return (
     <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <Image src={image} width={40} height={40} alt="Avatar" />
+      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14 ring-4 ring-indigo-600">
+        <Image
+          src={image}
+          width={56}
+          height={56}
+          alt="Avatar"
+          className="object-cover w-full h-full"
+        />
       </div>
       <div>
         <div className="text-lg font-medium">{name}</div>

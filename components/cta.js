@@ -2,6 +2,14 @@ import React from "react";
 import Container from "./container";
 
 export default function Cta() {
+  // WhatsApp Configuration
+  const whatsappNumber = "6285119398542";
+  const whatsappMessage =
+    "Halo RancangWeb! Saya ingin konsultasi gratis tentang pembuatan website. Bisa dibantu?";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
   return (
     <Container>
       <div className="flex flex-wrap items-center justify-between w-full max-w-4xl gap-5 mx-auto text-white bg-indigo-600 px-7 py-7 lg:px-12 lg:py-12 lg:flex-nowrap rounded-xl">
@@ -15,10 +23,10 @@ export default function Cta() {
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
           <a
-            href="https://github.com/themewagon/nextly"
+            href={whatsappUrl}
             target="_blank"
-            rel="noopener"
-            className="inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 "
+            rel="noopener noreferrer"
+            className="inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 hover:bg-gray-50 transition-colors"
           >
             Hubungi kami, konsultasi gratis!
           </a>
