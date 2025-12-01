@@ -3,9 +3,8 @@ import Container from "./container";
 import Image from "next/image";
 
 export default function Footer() {
-  // Social Media Links - Ganti dengan link sosmed kamu broder
-  const tiktokUrl = "https://www.tiktok.com/@rancangweb"; // Ganti dengan username TikTok kamu
-  const instagramUrl = "https://www.instagram.com/rancangweb"; // Ganti dengan username Instagram kamu
+  const tiktokUrl = "https://www.tiktok.com/@rancangweb";
+  const instagramUrl = "https://www.instagram.com/rancang_web.id/";
 
   return (
     <div className="relative">
@@ -79,7 +78,6 @@ export default function Footer() {
   );
 }
 
-// TikTok Icon - Official Logo
 const TikTok = ({ size = 24 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +90,6 @@ const TikTok = ({ size = 24 }) => (
   </svg>
 );
 
-// Instagram Icon
 const Instagram = ({ size = 24 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +102,6 @@ const Instagram = ({ size = 24 }) => (
   </svg>
 );
 
-// BONUS: Icon sosmed lain kalo mau dipake broder
 const Facebook = ({ size = 24 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
