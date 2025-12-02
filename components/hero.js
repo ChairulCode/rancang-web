@@ -2,26 +2,6 @@ import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
 
-// SEMUA FUNCTION SVG DI TARUH DI ATAS DULU BRODER
-function TrendingUpGraph() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="120"
-      height="40"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-      <polyline points="17 6 23 6 23 12" />
-    </svg>
-  );
-}
-
 function ReactLogo() {
   return (
     <svg
@@ -207,7 +187,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
             <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <TrendingUpGraph />
+              <ReactLogo />
             </div>
             <div className="text-gray-400 dark:text-gray-400">
               <NextJsLogo />

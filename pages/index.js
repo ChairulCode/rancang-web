@@ -2,7 +2,7 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
-import Portfolio from "../components/Portofolio";
+import Portfolio from "../components/portofolio";
 
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
@@ -12,6 +12,7 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import Price from "../components/price";
 export default function Home() {
   return (
     <>
@@ -52,6 +53,7 @@ export default function Home() {
         </SectionTitle>
         <Testimonials />
       </div>
+      <Price />
       <Cta />
       <Footer />
       <PopupWidget />
